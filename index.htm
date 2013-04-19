@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+		<meta name="viewport" content="width=device-width,initial-scale=1" >
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
+		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+	</head>
+<body>
+	<div data-role="page" id="page-one">
+		<div data-role="header" >
+			<h1>My Title</h1>
+		</div>
+		<nav data-role="navbar" data-theme="e" >
+			<ul>
+				<li><a href="reviews" >Reviews</a></li>
+				<li><a href="map" >Map</a></li>
+				<li><a href="contact" >Contact Us</a></li>
+			</ul>
+		</nav>
+		
+		<section data-role="content" >
+			<a href="#reviews" data-role='button' >Go to Reviews</a>
+			<h2>Choose your Option</h2>
+			<ul data-role="listview" >
+				<li><a href='reviews/american' >American</a>
+					<ul>
+						<li>KFC</li>
+						<li>McDonals</li>
+					</ul>
+				</li>
+				<li><a href="reviews/french" >French</a></li>
+				<li><a href="reviews/italian" >Italian</a></li>
+			</ul>
+		</section>
+		
+		<section data-role="footer" data-position="fixed" >
+			<p>This is my footer</p>
+		</section>
+		
+	</div>
+	
+	<!-- Page Two -->
+	<div data-role="page" id="reviews">
+		<div data-role="header" data-theme='b' >
+			<h1>Reviews</h1>
+		</div>
+		<nav data-role="navbar" data-theme="e" >
+			<ul>
+				<li><a href="reviews" >Reviews</a></li>
+				<li><a href="map" >Map</a></li>
+				<li><a href="contact" >Contact Us</a></li>
+			</ul>
+		</nav>
+		<section data-role="content" >
+			<a href="#page-one" data-role='button' data-theme='b' >Go to page one</a>
+		</section>
+		<section data-role="footer" data-position="fixed" >
+			<p>This is my footer</p>
+		</section>
+	</div>
+</body>
+</html>
